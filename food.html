@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Colvde - The Best Restaurants In Your Home</title>
+    <meta name="title" content="Colvde - The Best Restaurants In Your Home">
+    <meta name="description" content="This is a food html template made by codewithsadee">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="loading-container" data-loading-container>
+        <div class="loading-circle"></div>
+    </div>
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo1.png" width="148" height="38" alt="Colvde home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo1.png" width="148" height="38" alt="Colvde home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>About Us</a>
+          </li> -->
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Restaurants</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="restaurant.html#footer" class="navbar-link" data-nav-link>Contacts/About Us</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="index.html#review" class="navbar-link" data-nav-link>Reviews</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="header-action">
+                <a href="cart.html"><button class="cart-btn" aria-label="cart">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span id="cart-count">0</span>
+                </button></a>
+                
+
+                <a href="#" class="btn btn-primary has-after" onclick="showMessage()">Order Now</a>
+                <div id="message-box" class="hidden">Please select restaurant first!!!</div>
+            </div>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler></div>
+
+        </div>
+    </header>
+
+    <br><br><br>
+
+
+    <section class="product-section">
+        <p style="font-size: 24px;">Our Chef’s Magic — Dishes You’ll Remember Long After the Last Bite.</p>
+        <hr><br>
+        <h1>Lura(Bevrages)</h1>
+        <hr>
+        <div class="pro-collection">
+
+            <div class="product-cart">
+                <img src="./assets/images/beer.jpg" alt="Kennington Lane Cafe" />
+                <h4>Alvahr</h4>
+                <span>Where boldness meets craft. A smooth yet daring brew, crafted for those who embrace the night and
+                    savor every sip.</span>
+                <h4 class="price">$399</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/coffee.jpg" alt="The Wilmington" />
+                <h4>MochaMuse</h4>
+                <span>it’s a spark for creativity. Each cup is a blend of rich aromas and bold flavors, inviting you to
+                    pause, reflect, and create.</span>
+                <h4 class="price">$189</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/wine.jpg" alt="The Wilmington" />
+                <h4>CrimsonWhim</h4>
+                <span>a glass of deep red at sunset, a toast to unplanned adventures, and the quiet magic of the
+                    unexpected.</span>
+                <h4 class="price">$369</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/oreo.jpg" alt="The Wilmington" />
+                <h4>ChocoCrush Oreo Shake </h4>
+                <span>Indulge in the perfect blend of rich chocolate, crunchy Oreo crumbles. sweet treat that’s as bold
+                    as it is irresistible.</span>
+                <h4 class="price">$236</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/juices.jpg" alt="The Wilmington" />
+                <h4>FreshFusion Juices </h4>
+                <span>pure, refreshing, and nourishing. Whether you crave something sweet, tangy, or tropical, there’s a
+                    blend for every mood.</span>
+                <h4 class="price">$156</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/mixedwine.jpg" alt="The Wilmington" />
+                <h4>VelvetBlend Wines</h4>
+                <span>A perfect harmony of rich reds and crisp whites, blended to create bold, unique flavors. Every sip is a dance of sweet, smooth, and subtle notes </span>
+                <h4 class="price">$456</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/verginmojito.jpg" alt="The Wilmington" />
+                <h4>MintyMist Mojito</h4>
+                <span>A perfect fusion of zesty lime, fresh mint, and a splash of sparkling magic. Every sip is a breeze of flavor — light, bold, and full of summer vibes.</span>
+                <h4 class="price">$195</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/rum.jpg" alt="The Wilmington" />
+                <h4>DarkTide Rum</h4>
+                <span>A rich blend of deep, smoky flavors and subtle sweet notes, crafted for those who embrace the night and savor every sip. </span>
+                <h4 class="price">$299</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+        </div>
+
+        <hr><br>
+        <h1>CrunchCraze Snacks</h1>
+        <hr>
+        <div class="pro-collection">
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (1).jpg" alt="Kennington Lane Cafe" />
+                <h4>SoulSip Soups</h4>
+                <span>A perfect start to your meal with rich broths and hearty ingredients.</span>
+                
+                <h4 class="price">$120</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (2).jpg" alt="The Wilmington" />
+                <h4>Greek Delight Salad</h4>
+                <span>Fresh veggies, feta cheese, and olives tossed in olive oil ,  Smooth, bold, and perfectly aged</span>
+
+                <h4 class="price">$400</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (3).jpg" alt="The Wilmington" />
+                <h4>Herb-Infused Cheese Bites </h4>
+                <span>Fresh zucchini ribbons filled with a tangy chickpea salad.</span>
+
+                <h4 class="price">$250</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (4).jpg" alt="The Wilmington" />
+                
+                <h4>Avocado Tuna Bowl </h4>
+                <span>Creamy avocado mash topped with fresh tuna and citrus slices. </span>
+                <h4 class="price">$350</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (5).jpg" alt="The Wilmington" />
+                <h4>Rainbow Veggie Rolls</h4>
+                <span>Delicate rice paper wraps filled with crisp carrots, purple cabbage, cucumber, and fresh herbs</span>
+                
+                <h4 class="price">$282</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (6).jpg" alt="The Wilmington" />
+                <h4>Garlic Parmesan Swirls</h4>
+                <span>Golden, flaky puff pastry filled with a rich blend of spinach, herbs, and melted cheese. </span>
+                
+                <h4 class="price">$450</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (7).jpg" alt="The Wilmington" />
+                <h4>Smoked Salmon Blinis</h4>
+                <span>Soft blinis crowned with smooth avocado mousse, fresh herbs, and a touch of citrus zest.</span>
+                
+                <h4 class="price">$499</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/s1 (8).jpg" alt="The Wilmington" />
+                <h4>Spiced Meat Rolls</h4>
+                <span> Crispy phyllo rolls stuffed with a blend of minced meat, herbs, and aromatic spices.</span>
+                
+                <h4 class="price">$399</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+        </div>
+
+        <hr><br>
+        <h1>SavorSphere Main Course</h1>
+        <hr>
+        <div class="pro-collection">
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (2).jpg" alt="Kennington Lane Cafe" />
+                <h4>Spicy Creole Prawn Gumbo</h4>
+                <span> A bold, flavorful stew with prawns, sausage, and okra, served with steamed rice.</span>
+                
+                <h4 class="price">$950</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (1).jpg" alt="The Wilmington" />
+                <h4>Crispy Cocktail Sausages</h4>
+                <span>Bite-sized sausages served on fresh lettuce with sliced tomatoes and a drizzle of spicy sauce.</span>
+                
+                <h4 class="price">$850</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (3).jpg" alt="The Wilmington" />
+                <h4>Grilled Ribeye Steak</h4>
+                <span>Juicy, perfectly seared ribeye steak served with roasted vegetables and a smooth puree.</span>
+                
+                <h4 class="price">$1050</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (4).jpg" alt="The Wilmington" />
+                <h4>Grilled Fish Fillet</h4>
+                <span>Perfectly seared fish fillet served with roasted cherry tomatoes, asparagus, and a flavorful herb sauce.</span>
+                
+                <h4 class="price">$759</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (5).jpg" alt="The Wilmington" />
+                <h4>Thai Curry with Rice</h4>
+                <span>A rich and creamy Thai curry served with grilled vegetables, jasmine rice topped with a charred lemon, and a side of fresh bread. </span>
+                
+                <h4 class="price">$699</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (6).jpg" alt="The Wilmington" />
+                <h4> Coconut Curry with Rice</h4>
+                <span>Tender coconut curry served in a fresh coconut shell, paired with steamed white rice. A perfect blend of creamy, aromatic spices and rich flavors.</span>
+                
+                <h4 class="price">$595</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (7).jpg" alt="The Wilmington" />
+                <h4>Udon Noodles with Tempura</h4>
+                <span>A comforting bowl of thick udon noodles in a savory soy-based broth, topped with soft-boiled egg, green onions, and grated ginger</span>
+                
+                <h4 class="price">$692</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/m1 (8).jpg" alt="The Wilmington" />
+                <h4>Chinese Set Meal</h4>
+                <span>A hearty set featuring Mapo Tofu — soft tofu cubes in a spicy, savory sauce topped with green onions and fresh cabbage salad drizzled with dressing.</span>
+                
+                <h4 class="price">$765</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+        </div>
+
+        <hr><br>
+        <h1>SugarBloom Desserts</h1>
+        <hr>
+        <div class="pro-collection">
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (1).jpg" alt="Kennington Lane Cafe" />
+                
+                <h4> Mystic Mint Cupcakes </h4>
+                <span>crowned with a halo of rainbow sprinkles. A bite of magic in every swirl!</span>
+                <h4 class="price">$199</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (2).jpg" alt="The Wilmington" />
+                
+                <h4>Blush Berry Bliss</h4>
+                <span>A delicate pink mousse cake with a velvety finish, topped with fresh strawberries, raspberries, and blueberries</span>
+                <h4 class="price">$350</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (3).jpg" alt="The Wilmington" />
+                
+                <h4>Royal Blueberry Dream</h4>
+                <span>A luscious cheesecake with a buttery biscuit base, crowned with a rich, glossy blueberry compote.</span>
+                <h4 class="price">$401</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (4).jpg" alt="The Wilmington" />
+                
+                <h4>Berry Bliss Crêpes</h4>
+                <span>Delicate, golden-brown crêpes filled with luscious cream and fresh strawberries, topped with fluffy whipped cream and juicy raspberries</span>
+                <h4 class="price">$798</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (5).jpg" alt="The Wilmington" />
+                
+                <h4>Raspberry Chocolate Tart</h4>
+                <span>A buttery, golden tart shell filled with silky smooth dark chocolate ganache, crowned with plump, fresh raspberries.</span>
+                <h4 class="price">$399</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (6).jpg" alt="The Wilmington" />
+                
+                <h4>Black Forest Cupcakes</h4>
+                <span>Moist chocolate cupcakes topped with fluffy whipped cream, sprinkled with delicate chocolate shavings</span>
+                <h4 class="price">$155</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (7).jpg" alt="The Wilmington" />
+                
+                <h4>Gourmet Dessert Platter</h4>
+                <span>crisp tart shell topped with golden, fluffy meringue , delicately glazed for a sweet, tangy finish.</span>
+                <h4 class="price">$659</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/d1 (8).jpg" alt="The Wilmington" />
+                
+                <h4>Decadent Chocolate Drip Cake</h4>
+                <span>cascading down the sides , for added texture and indulgence , smooth and luscious.</span>
+                <h4 class="price">$1199</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+        </div>
+
+
+        <hr><br>
+        <h1>Chef’s Signature Specials</h1>
+        <hr>
+        <div class="pro-collection">
+
+            <div class="product-cart">
+                <img src="./assets/images/sd1 (1).jpg" alt="Kennington Lane Cafe" />
+                
+                <h4>Royal Platter</h4>
+                <span> A majestic combination of all our signature dishes, offering a symphony of textures and flavors — a true feast for the senses.</span>
+                <h4 class="price">$899</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/sd1 (2).jpg" alt="The Wilmington" />
+                
+                <h4>Golden Harvest Platter</h4>
+                <span>Fragrant yellow rice topped with cashews, served with tender grilled beef, crispy fries, and fresh steamed vegetables.</span>
+                <h4 class="price">$449</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/sd1 (3).jpg" alt="The Wilmington" />
+                
+                <h4>Heavenly Bliss Sundae Trio</h4>
+                <span>A trio of chocolate, vanilla, and berry ice creams — rich, creamy, and irresistibly delicious. Every bite is pure happiness!</span>
+                <h4 class="price">$289</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+            <div class="product-cart">
+                <img src="./assets/images/sd1 (4).jpg" alt="The Wilmington" />
+                
+                <h4>Royal Feast Platter</h4>
+                <span>A lavish spread of aromatic yellow rice, spiced meat, crispy fries, sautéed veggies, and creamy sides — a perfect harmony of flavors for a grand meal.</span>
+                <h4 class="price">$459</h4>
+                <button class="btn btn-primary has-after buy-icon">Add to cart</button>
+            </div>
+
+           
+
+    </section>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="section footer-top grid-list">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo1.png" width="148" height="38" alt="Colvde home">
+                    </a>
+
+                    <div style="margin-left: 70px; margin-top: 15px;">
+                        <p class="footer-list-title h5">About Us</p>
+                    </div>
+
+                    <h2 class="h2 section-title">The Best Restaurants in Your Home</h2>
+                    <p class="section-text">
+                        "Savor the taste of freshness, delivered right to your doorstep.<br>
+                        From mouth-watering meals to delightful snacks, we bring flavor and convenience together.
+                        Fast service, fresh ingredients — because every bite should be a moment of joy."
+                    </p>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title h5">Menu</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <span class="span">Home</span>
+
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+        <a href="#" class="footer-link">
+          <span class="span">About Us</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+      </li> -->
+
+                    <li>
+                        <a href="food.html" class="footer-link">
+                            <span class="span">Restaurants</span>
+
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cart.html" class="footer-link">
+                            <span class="span">Cart</span>
+
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="feedback.html" class="footer-link">
+                            <span class="span">feedback</span>
+
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title h5">Contacts</p>
+                    </li>
+
+                    <li>
+                        <address class="address">
+                            <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+                            <span class="span">
+                                123 Flavor Street,
+                                Downtown Gourmet District,
+                                Foodville, FV 45678</span>
+                        </address>
+                    </li>
+
+                    <li>
+                        <a href="mailto:personalsuse69@mail.net" class="footer-link">
+                            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+                            <span class="span">colvdedelivery@foodmail.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tel:+12344567890" class="footer-link">
+                            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+                            <span class="span">+91 987-654-3210</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    Copyright 2025 Dhirajsuhanda . All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+- custom js link
+-->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/cart.js"></script>
+
+    <!-- 
+- ionicon link
+-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/order.js"></script>
+
+</body>
+
+</html>
